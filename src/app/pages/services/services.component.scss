@@ -1,0 +1,10 @@
+@import '../../../assets/scss/base/pallete';
+@import '../../../assets/scss/base/globals';
+@import '../../../assets/scss/base/mixmins';
+@import '../../../assets/scss/base/utilities';
+
+span {
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: $primary;
+}

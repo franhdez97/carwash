@@ -1,0 +1,45 @@
+@import '../../../assets/scss/base/pallete';
+@import '../../../assets/scss/base/globals';
+@import '../../../assets/scss/base/mixmins';
+@import '../../../assets/scss/base/utilities';
+
+.card {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $secondary;
+    padding: 2rem;
+}
+.card__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+    .card__job {
+        background-color: $primary;
+        color: $white;
+        padding: 1rem;
+        border-radius: .5rem;
+    }
+    .card__price {
+        color: $secondary;
+        font-size: 2.4rem;
+    }
+}
+.card__description {
+    margin-bottom: 1rem;
+    span {
+        font-weight: 700;
+    }
+}
+.card__functions {
+    margin-bottom: 1rem;
+    span {
+        font-weight: 700;
+    }
+    ul {
+        padding-left: 2rem;
+    }
+}

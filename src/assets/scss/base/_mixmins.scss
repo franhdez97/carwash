@@ -20,3 +20,8 @@
     column-gap: $gap;
     row-gap: $gap;
 }
+@mixin hoverDarken($color, $value) {
+    &:hover {
+        background-color: darken($color, $value);
+    }
+}

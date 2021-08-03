@@ -1,0 +1,31 @@
+<section class="container container--center my-4">
+    <h1 class="text-center">Completa el formulario</h1>
+
+    <img src="../../../assets/img/lavado_crop.jpg" alt="Imagen de fondo">
+    <form class="form">
+        <fieldset>
+            <legend>Datos del mensaje</legend>
+
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" placeholder="Francisco Hernández">
+
+            <label for="email">Su correo</label>
+            <input type="email" id="email" placeholder="fran@example.com">
+
+            <label for="categoria">Estoy interesado(a) en</label>
+            <select id="categoria">
+                <option value="" disabled>Seleccione</option>
+                <option value="job">Trabajar</option>
+                <option value="custom_service">Servicio personalizado</option>
+                <option value="report">Hacer un reclamo</option>
+            </select>
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" placeholder="Hola, vi en su sección de empleos que solicitan un mecanico. Estoy interesado en el puesto."></textarea>
+
+            <div class="form__button my-2">
+                <input type="button" value="Enviar" class="button button--primary">
+            </div>
+        </fieldset>
+    </form>
+</section>

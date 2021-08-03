@@ -1,0 +1,86 @@
+<main class="main">
+    <section class="main__welcome">
+        <h1>Carwash Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <a href="#servicios" class="button button--accet">Nuestro servicios</a>
+    </section>
+</main>
+
+<section class="about-us container container--center my-4">
+    <h2 class="text-center">Sobre nosotros</h2>
+    <div class="grid mt-2">
+        <img src="../../../assets/img/about-us.jpg" alt="Imagen sobre nosotros" loading="lazy" rel="no-referrer">
+        <div class="about-us__description">
+            <p>10 años dando el mejor servicio</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cum in consequatur tenetur labore praesentium cumque laboriosam blanditiis nisi voluptates, est repudiandae quam esse, sapiente ipsam dolor magnam minima molestias. Qui placeat ut at, commodi sapiente soluta provident id iusto assumenda fuga. Reprehenderit unde adipisci eveniet rerum consectetur impedit libero!</p>
+        </div>
+    </div>
+</section>
+
+<section class="servicios" id="servicios">
+    <h2 class="text-center">Nuestros servicios</h2>
+    <div class="container">
+        <div class="card">
+            <div class="card__title bg-image bg-image--carwash" [routerLink]="['/servicio','tradicional']">
+                <p>Lavado tradicional</p>
+            </div>
+            <div class="card__content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et mollitia ea culpa, veritatis assumenda iure nam vel adipisci dolores magnam?
+            </div>
+            <div class="card__footer">
+                Precio: <span>$20.00</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card__title bg-image bg-image--automatic"[routerLink]="['/servicio','automatico']">
+                <p>Lavado automatico</p>
+            </div>
+            <div class="card__content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et mollitia ea culpa, veritatis assumenda iure nam vel adipisci dolores magnam?
+            </div>
+            <div class="card__footer">
+                Precio: <span>$25.00</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card__title bg-image bg-image--maintenance"[routerLink]="['/servicio','mantenimiento']">
+                <p>Mantenimiento Básico</p>
+            </div>
+            <div class="card__content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et mollitia ea culpa, veritatis assumenda iure nam vel adipisci dolores magnam?
+            </div>
+            <div class="card__footer">
+                Precio: <span>$15.00</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container container--center my-4">
+    <h2 class="text-center">Horarios</h2>
+    <div class="grid mt-2">
+        <img src="../../../assets/img/horarios.jpg" alt="Imagen de días laborales">
+        <div class="work-days">
+            <div>
+                <p>Lunes - Viernes: <span>8:00 am hasta 6:00 pm</span></p>
+                <p>Sábados - Domingos: <span>9:00 am hasta 3 pm</span></p>
+            </div>
+            <p class="work-days__ubication">
+                <span>Ubicados en: </span>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima cumque asperiores molestiae amet voluptate nostrum rem quibusdam vel aperiam rerum.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container my-4">
+    <h2 class="text-center">Galería</h2>
+    <div class="gallery">
+        <img
+            class="gallery__img"
+            *ngFor="let photo of photos; let i = index" [src]="photo" (click)="showGallery(i)"/>
+    </div>
+</section>

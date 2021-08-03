@@ -1,13 +1,16 @@
 @import '../../../assets/scss/base/pallete';
 @import '../../../assets/scss/base/globals';
+@import '../../../assets/scss/base/mixmins';
+@import '../../../assets/scss/base/utilities';
 
-.footer {
+.not-found {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    background-color: darken($accet, 20);
-    color: $black;
+
+    h3 {
+        margin-bottom: 2rem;
+    }
 }

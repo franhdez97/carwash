@@ -1,9 +1,92 @@
+@import './pallete';
+
+/*Extras*/
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 120rem;
+}
+.container--center {
+    max-width: 80rem;
+}
+
+/*Text*/
 .text-center {
     text-align: center;
 }
+
+/*Margin and Padding*/
 .no-margin {
     margin: 0;
 }
 .no-padding {
     padding: 0;
+}
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.my-4 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+/*Buttons*/
+.button {
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    transition: background-color .25s ease;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.button--primary {
+    background-color: $primary;
+    color: $white;
+
+    @include hoverDarken($primary, 5);
+}
+.button--secondary {
+    background-color: $secondary;
+    color: $white;
+
+    @include hoverDarken($secondary, 15);
+}
+.button--accet {
+    background-color: $accet;
+    color: $black;
+
+    @include hoverDarken($accet, 30);
+}
+
+/*grid - es estaticos*/
+.grid {
+    @include tablet {
+        @include grid(2, 2rem);
+    }
+}
+
+/*Background image*/
+.bg-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.bg-image--carwash {
+    background-image: url(../../img/servicio1.jpg);
+}
+.bg-image--automatic {
+    background-image: url(../../img/servicio2.jpg);
+}
+.bg-image--maintenance {
+    background-image: url(../../img/servicio3.jpg);
 }

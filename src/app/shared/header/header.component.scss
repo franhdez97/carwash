@@ -1,0 +1,32 @@
+@import '../../../assets/scss/base/pallete';
+@import '../../../assets/scss/base/globals';
+@import '../../../assets/scss/base/mixmins';
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: $secondary;
+    color: $black;
+}
+
+.header__list {
+    padding: 2rem 0;
+
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+.header__links {
+    color: $white;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: color .25s ease;
+
+    &:hover {
+        color: $accet;
+    }
+}

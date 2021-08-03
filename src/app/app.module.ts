@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterModule } from './shared/footer/footer.module';
-import { SidebarModule } from './shared/sidebar/sidebar.module';
+import { HeaderModule } from './shared/header/header.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { SidebarModule } from './shared/sidebar/sidebar.module';
     BrowserModule,
     AppRoutingModule,
     FooterModule,
-    SidebarModule
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

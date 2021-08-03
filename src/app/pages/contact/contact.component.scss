@@ -1,0 +1,62 @@
+@import '../../../assets/scss/base/pallete';
+@import '../../../assets/scss/base/globals';
+@import '../../../assets/scss/base/mixmins';
+@import '../../../assets/scss/base/utilities';
+
+img {
+    width: 100%;
+    margin-top: 2rem;
+}
+.form {
+    position: relative;
+    background-color: $background;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 2rem;
+    margin-top: -15rem;
+
+    fieldset {
+        border-color: $primary;
+        border-radius: .5rem;
+    }
+    legend {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    label {
+        display: block;
+        margin-bottom: .5rem;
+    }
+    input:not([type=button]),
+    textarea,
+    select {
+        border: 1px solid $secondary;
+        background-color: $white;
+        border-radius: .5rem;
+        width: 100%;
+        transition: border .25s ease;
+        padding: .5rem 1rem;
+        margin-bottom: 1rem;
+
+        &:focus {
+            outline: none;
+            border: 1px solid darken($accet, 25);
+        }
+    }
+    textarea {
+        height: 20rem;
+        resize: none;
+    }
+    select {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+}
+
+.form__button {
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,6 +1,20 @@
 <header class="header">
     <nav>
-        <ul class="header__list">
+        <ul class="header__desktop">
+            <li>
+                <a [routerLink]="['/']" class="header__links">Inicio</a>
+            </li>
+            <li>
+                <a [routerLink]="['/', 'empleos']" class="header__links">Empleos</a>
+            </li>
+            <li>
+                <a [routerLink]="['/', 'contacto']" class="header__links">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="header__navbar">
+        <img src="../../../assets/img/menu.svg" alt="Icono de menu" (click)="showMenu()">
+        <ul [class]="showOptions">
             <li>
                 <a [routerLink]="['/']" class="header__links">Inicio</a>
             </li>

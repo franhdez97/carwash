@@ -3,7 +3,7 @@
         <h1>Carwash Lorem ipsum</h1>
         <p>Lorem ipsum dolor sit amet.</p>
 
-        <a href="#servicios" class="button button--accet">Nuestro servicios</a>
+        <a href="#servicios" class="button button--accet" rel="no-referrer">Nuestro servicios</a>
     </section>
 </main>
 
@@ -62,7 +62,7 @@
 <section class="container container--center my-4">
     <h2 class="text-center">Horarios</h2>
     <div class="grid mt-2">
-        <img src="../../../assets/img/horarios.jpg" alt="Imagen de días laborales">
+        <img src="../../../assets/img/horarios.jpg" alt="Imagen de días laborales" loading="lazy" rel="no-referrer">
         <div class="work-days">
             <div>
                 <p>Lunes - Viernes: <span>8:00 am hasta 6:00 pm</span></p>
@@ -81,6 +81,9 @@
     <div class="gallery">
         <img
             class="gallery__img"
-            *ngFor="let photo of photos; let i = index" [src]="photo" (click)="showGallery(i)"/>
+            *ngFor="let photo of photos; let i = index" [src]="photo" (click)="showGallery(i)"
+            alt="Foto {{i}}"
+            loading="lazy"
+            rel="no-referrer"/>
     </div>
 </section>
